@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "./App.css";
 import ContactForm from "./component/ContactForm";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import ContactList from "./component/ContactList";
 
 //1. 왼쪽에는 연락처 등록하는 곳, 오른쪽은 연락처 리스트와 검색창
@@ -11,17 +11,26 @@ import ContactList from "./component/ContactList";
 
 function App() {
   return (
-    <div>
-      <h1 className="title">연락처</h1>
-      <Container>
-        <Row>
-          <Col>
-          <ContactForm/>
-          </Col>
-          <Col>
-          <ContactList/></Col>
-        </Row>
-      </Container>
+    <div className="main-block">
+      <div className="main-area">
+        <div className="apple-button">
+          <button className="red"/>
+          <button className="yellow"/>
+          <button className="green"/>
+        </div>
+        <h1 className="title">연락처</h1>
+        <h5>연락처를 편리하게 관리하세요.</h5>
+        <Container>
+          <Row className="row">
+            <Col>
+              <ContactForm />
+            </Col>
+            <Col>
+              <ContactList />
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 }

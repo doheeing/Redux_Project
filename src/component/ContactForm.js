@@ -31,9 +31,11 @@ const ContactForm = () => {
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
         </FloatingLabel>
-        <Button variant="primary" type="submit">
+        <div className="input-button-area">
+        <Button variant="primary" type="submit" className="input-button">
           추가
         </Button>
+        </div>
       </Form>
     </div>
   );

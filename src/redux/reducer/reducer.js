@@ -1,9 +1,10 @@
 let initialState = {
   contactList: [],
+  keyword: "",
 };
 
 function reducer(state = initialState, action) {
-    const {type, payload} = action
+  const { type, payload } = action;
   switch (type) {
     case "ADD_CONTACT":
       return {
@@ -16,6 +17,8 @@ function reducer(state = initialState, action) {
           },
         ],
       }; // return 된 값을 store은 적용
+    case "SEARCH_BY_USERNAME":
+      return { ...state, keyword: payload.keyword };
 
     default:
       return { ...state };
@@ -23,3 +26,4 @@ function reducer(state = initialState, action) {
 }
 
 export default reducer;
+
