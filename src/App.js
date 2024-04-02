@@ -18,8 +18,8 @@ function App() {
           <button className="yellow"/>
           <button className="green"/>
         </div>
-        <h1 className="title">연락처</h1>
-        <h5>연락처를 편리하게 관리하세요.</h5>
+        <h1 className="title">심플 노트</h1>
+        <h4>잊지않도록 기록하세요.</h4>
         <Container>
           <Row className="row">
             <Col>
