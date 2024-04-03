@@ -14,18 +14,18 @@ const SearchBox = () => {
   return (
     <div>
       <Row>
-        <Col lg={9}>
-          <Form onSubmit={searchByName}>
+        <Form onSubmit={searchByName} className="search-button-area" >
+          <Col lg={8}>
             <Form.Control
               type="text"
               placeholder="제목을 입력해주세요"
               onChange={(event) => setKeyword(event.target.value)}
             />
-          </Form>
-        </Col>
-        <Col lg={3}>
-          <Button className="search-button">찾기</Button>
-        </Col>
+          </Col>
+          <Col >
+            <Button className="search-button mt-0" type="submit">찾기</Button>
+          </Col>
+        </Form>
       </Row>
     </div>
   );

@@ -129,3 +129,7 @@ textarea::placeholder {
   padding-right: 70px;
   margin-bottom: 5px;
 }
+.search-button-area{
+  display: flex;
+  justify-content: space-around;
+}
